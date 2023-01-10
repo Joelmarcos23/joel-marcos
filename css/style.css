@@ -1,0 +1,484 @@
+/**
+   COLORES
+            #003865
+            #EF5B0C
+            #D4F6CC
+            #3CCF4E
+   TIPOGRAFIA
+font-family: 'Harmattan', sans-serif;
+*/
+/* CSS EN INDEX */
+*
+    {margin:0;
+    padding: 0;
+    box-sizing: border-box;}
+.body-index
+    {background-image: url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;}
+.barra-de-navegacion 
+    {display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 165px;}
+.logo 
+    {width: 150px;
+    height: 150px;}
+.imagen-logo
+    {width: 164px;
+    height: 133px;
+    margin: 20px 20px;
+    border-color: #DC5F00;
+    border-style: solid;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;}
+.barra-de-navegacion ul 
+    {display: flex;
+    justify-content: flex-end;}
+.barra-de-navegacion li
+    {display: inline;
+    margin: 20px;
+    padding: 20px;}
+.barra-de-navegacion li a
+    {text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Harmattan', sans-serif;
+    color: #D4F6CC}
+.banner 
+    {background-color: black;
+    width: 100%;
+    height: 200px;
+    text-align: center;}
+.productos
+    {background-color: #DC5F00;
+    width: 100%;
+    height:300px;}
+.imagen-de-producto
+    {display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 20px;}
+.foto-producto
+    {grid-area: item1;
+    width: 190px;
+    height: 170px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;}
+.titulo-producto
+    {grid-area: item2;
+    margin-left: 8px;
+    font-size: 15px;
+    color: #D4F6CC;
+    font-family:'Harmattan', sans-serif;
+    text-transform: uppercase;
+    }
+.parrafo-producto
+    {grid-area: item4;
+    font-size: 8px;
+    color: #D4F6CC;
+    font-family:'Harmattan', sans-serif;
+    text-transform: uppercase;
+    margin-left: 65%;}
+.box1
+    {display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4";
+    text-align: start;
+    background-color: #003865;
+    width: 205px;
+    height: 215px;
+    margin-bottom: 15px;}
+.box2
+    {display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4";
+    text-align: start;
+    background-color: #003865;
+    width: 205px;
+    height: 215px;
+    margin-bottom: 15px;}
+.box3
+    {display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4";
+    text-align: start;
+    background-color: #003865;
+    width: 205px;
+    height: 215px;
+    margin-bottom: 15px;}
+.box4
+    {display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4";
+    text-align: start;
+    background-color: #003865;
+    width: 205px;
+    height: 215px;
+    margin-bottom: 15px;}
+.box5
+    {display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4";
+    text-align: start;
+    background-color: #003865;
+    width: 205px;
+    height: 215px;
+    margin-bottom: 15px;}
+.box6
+    {display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3"
+    "item4 item4";
+    text-align: start;
+    background-color: #003865;
+    width: 205px;
+    height: 215px;
+    margin-bottom: 15px;}
+.ancla
+    {grid-area: item3;
+    max-height: 20px;}
+.carrito
+    {max-width:16px;
+    max-height:16px;
+    margin-bottom: 50%;
+    margin-top: 5px;
+    color: #DC5F00;}
+.flex-section2
+    {display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 550px;}
+.titulo-section2
+    {background-color: #DC5F00;
+    font-size: 34px;
+    text-transform: uppercase;}
+.novedades
+    {margin-top: 100px;}
+.articulo1
+    {background-color: #003865;
+    display: grid;
+    grid-template-areas:
+    "foto foto"
+    "titulo titulo"
+    "parrafo parrafo";
+    margin-top: 50px;}
+.articulo2
+    {background-color: #003865;
+    display: grid;
+    grid-template-areas:
+    "foto foto"
+    "titulo titulo"
+    "parrafo parrafo";
+    margin-top: 50px;}
+.articulo3
+    {background-color: #003865;
+    display: grid;
+    grid-template-areas:
+    "foto foto"
+    "titulo titulo"
+    "parrafo parrafo";
+    margin-top: 50px;}
+.foto-articulo
+    {grid-area: foto;
+    width:400px;
+    height:340px;}
+.titulo-articulo
+    {grid-area: titulo;
+    align-items: center;
+    font-size: 15px;
+    color:#D4F6CC;
+    font-family:'Harmattan', sans-serif;
+    text-transform: uppercase;}
+.parrafo-articulo
+    {grid-area: parrafo;
+    align-items: center;
+    font-size: 15px;
+    color:#D4F6CC;
+    font-family:'Harmattan', sans-serif;
+    text-transform: uppercase;}
+.foto-redes-sociales
+    {max-width: 60px;
+    max-height: 60px;}
+.contacto
+    {width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 5px;}
+.redes-sociales
+    {display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-top: 5px;
+    margin-right: 10px;}
+header
+    {background-color:black}
+h1 
+    {font-size:60px;
+    stroke: #DC5F00;
+    text-transform: capitalize;
+    font-family: 'Harmattan', sans-serif;
+    color:#D4F6CC}
+h2 
+    {font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Harmattan', sans-serif;
+    color:#D4F6CC}
+main 
+    {font-family: 'Harmattan', sans-serif;
+    text-align: center;
+    font-size: 34px;}
+footer 
+    {display: flex;
+    justify-content: space-between;
+    font-family: 'Harmattan', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 34px;
+    }
+/* CSS EN INDEX */
+
+/* CSS EN CONTACTO */
+.body-contacto
+    {background-color: black;}
+.google-maps
+    {display: grid;
+    width: 569px;
+    height: 439px;
+    margin: 20px 160px 20px 0px;}
+.section-parrafo
+    {background-color: black;}
+.parrafo-contacto
+    {color: white;}
+.formulario
+    {display: flex;
+    justify-content: space-between;}
+.caja-formulario
+    {display: grid;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item5"
+    "item5 item5"
+    "item5 item5";}
+.label1
+    {grid-area: item1;
+    display: grid;
+    margin: 0px 20px 0px 20px;}
+.label2
+    {grid-area: item2;
+    display: grid;
+    margin: 0px 20px 0px 20px;}
+.label3
+    {grid-area: item3;
+    display: grid;
+    margin: 0px 20px 0px 20px;}
+.label4
+    {grid-area: item4;
+    display: grid;
+    margin: 0px 20px 0px 20px;}
+.label5
+    {grid-area: item5;
+    display: grid;
+    margin: 0px 20px 20px 20px;}
+.span-contacto
+    {color: white;
+    text-transform: uppercase;
+    font-size: 20px;}
+.como-llegar
+    {color: white;
+    text-transform: uppercase;
+    font-size: 34px;}
+iframe
+    {width: 569px;
+    height: 371px;}
+legend
+    {color: white;
+    text-transform: uppercase;
+    margin: 0px 25px 0px 25px;}
+textarea
+    {width: 525px;
+    height: 200px;
+    }
+form
+    {margin: 20px 0px 20px 160px;}
+    /* CSS EN CONTACTO */
+
+@media (max-width:320px)
+{
+.barra-de-navegacion
+    {display: grid;
+    grid-template-areas: 
+    "item1 item2 item3";}
+.imagen-logo
+    {width: 60px;
+    height: 50px;
+    grid-area: item1;
+    grid-column: 1/2;}
+.logo
+    {width: 60px;}
+.barra-de-navegacion ul
+    {display: grid;
+    grid-area: item2;
+    grid-column: 2/3;
+    margin-top: 20px;}
+.barra-de-navegacion ul li
+    {width: 70px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;}
+.barra-de-navegacion ul li a
+    {font-size: 15px;}
+.banner
+    {display: grid;
+    grid-column: 1fr;
+    align-items: center;
+    height: 120px;}
+h1
+    {font-size: 20px;
+    text-align: center;}
+h2
+    {font-size: 14px;
+    text-align: center;}
+.box1
+    {width: 90px;
+    height: 100px;}
+.box2
+    {width: 90px;
+    height: 100px;}
+.box3
+    {width: 90px;
+    height: 100px;}    
+.productos
+    {height: 150px;}
+.box4
+    {display: none;}
+.box5
+    {display: none;}
+.box6
+    {display: none;}
+.articulo3
+    {display: none;}
+.foto-producto
+    {width: 80px;
+    height: 70px;
+    margin: 2px 5px 0px 5px;}
+.imagen-de-producto
+    {display: flex;
+    justify-content: space-between;
+    margin-right: 20px;}
+.titulo-producto
+    {width: 58px;
+    height: 11px;
+    font-size: 6px;}
+.parrafo-producto
+    {width: 31px;
+    height: 10px;
+    font-size: 4px;
+    margin-bottom: 70px;}
+.ancla 
+    {display: grid;
+    height: 11px;}
+.carrito
+    {width: 6px;
+    height: 5px;}
+.titulo-section2
+    {font-size: 14px;}
+.foto-articulo
+    {width: 100px;
+    height: 62px;}
+.articulo1
+    {width: 100px;
+    height: 122px;
+    background-color: white;}
+.articulo2
+    {width: 100px;
+    height: 122px;
+    background-color: white;}
+.titulo-articulo
+    {font-size: 10px;
+    color: black;}
+.parrafo-articulo
+    {font-size: 10px;
+    color: black;}
+.foto-redes-sociales
+    {width: 18px;
+    height: 15px;}
+.redes-sociales
+    {justify-content: end;}
+.contacto
+    {justify-content: start;}
+.parrafo-contacto
+    {font-size: 20px;}
+.formulario
+    {display: grid;}
+fieldset
+    {width: 320px;
+    height: 400px;}
+.label1
+    {width: 140px;
+    height: 25px;}
+.label2
+    {width: 140px;
+    height: 25px;}
+.label3
+    {width: 140px;
+    height: 25px;}
+.label3
+    {width: 140px;
+    height: 25px;}
+.label5
+    {width: 320px;
+    height: 120px;}
+.span-contacto
+    {width: 140px;
+    height: 25px;
+    font-size: 14px;}
+form
+    {width: 320px;
+    height: 500px;
+    margin: 0px;
+    font-size: 20px;}
+input
+    {width: 140px;
+    height: 25px;}
+.input2
+    {width: 70px;
+    height: 15px;
+    font-size: 10px;}
+textarea
+    {width: 280px;
+    height: 100px;}
+legend
+    {width: 70px;
+    font-size: 10px;}
+.google-maps
+    {width: 320px;
+    height: 320px;}
+.como-llegar
+    {font-size: 14px;
+    width: 320px;}
+iframe
+    {width: 320px;
+    height: 320px;}
+}
+
